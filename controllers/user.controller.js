@@ -11,7 +11,7 @@ exports.authFunc = async(req, res)=>{
         });
         console.log(response);
         if(response){
-            res.status(200).send({data: "User Autehnticated"});
+            res.status(200).send({data: response});
         }else{
             const userData = {
                 email: email,
